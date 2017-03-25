@@ -87,34 +87,6 @@ var compare = function (me, opponent) {
             return 'Computer!';
         }
 
-    } else if (me === 'lizard') {
-
-        if (opponent === 'scissors') {
-            return 'Computer!';
-        } else if (opponent === 'paper') {
-            return 'Human!';
-        } else if (opponent === 'rock') {
-            return 'Computer!';
-        } else if (opponent === 'lizard') {
-            return 'Nobody!';
-        } else if (opponent === 'spock') {
-            return 'Human!';
-        }
-
-    } else if (me === 'spock') {
-
-        if (opponent === 'scissors') {
-            return 'Human!';
-        } else if (opponent === 'paper') {
-            return 'Computer!';
-        } else if (opponent === 'rock') {
-            return 'Human!';
-        } else if (opponent === 'lizard') {
-            return 'Computer!';
-        } else if (opponent === 'spock') {
-            return 'Nobody!';
-        }
-
     } else {
         return "That doesn't make any sense!";
     }
