@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang=" language ">
+
+<head>
+
+
+    <!--Meta must have-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="robots" content="All" />
+    <meta name="googlebot-news" content="all" />
+
+    <!--Meta info-->
+    <meta name="description" content="Description max 155 characters" />
+    <meta name="keywords" content="keywords,divided,by,commas" />
+    <meta name="date" content="2016" />
+    <meta name="author" content="Author" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.min.css" media="screen" />
+    <link rel="stylesheet" href="css/animate.min.css" media="screen" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" href="css/main.min.css" media="screen" />
+
+    <!--[if lt IE 8]>
+	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	    <![endif]-->
+
+    <title>
+        Fun with particles
+    </title>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: #f2f2f2;
+        }
+        
+        #canvas {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #eaeaea;
+        }
+        
+        span,
+        div {
+            position: absolute;
+            color: #aaa;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            margin: auto;
+            font-family: Helvetica;
+            text-align: center;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        div {
+            bottom: 60px;
+        }
+        
+        div:nth-of-type(2) {
+            bottom: 20px;
+        }
+        
+        div:nth-of-type(2) button {
+            font-size: 14px;
+            padding: 4px 8px;
+        }
+        
+        div a {
+            text-decoration: none;
+            color: #2266bb;
+        }
+        
+        div a:first-child {
+            margin-right: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--
+
+It's been a couple of years since I made the original tearable cloth, and since then both me and Javascript have improved. I thought it deserved an update.
+
+It should be more efficient, wall collisions are greatly improved, and it has a slightly more stretchy, cloth-like texture. The code is better, a bit smaller and now in ES2015. That was the main point.
+
+-->
+
+    <canvas id="canvas"></canvas>
+    <span>Drag with your mouse, right-click to slice.</span>
+    <div>
+        <a href="https://github.com/Dissimulate/Tearable-Cloth">Github</a>
+        <a href="https://twitter.com/abro_oks">@abro_oks</a>
+    </div>
+    <div><button onclick="zeroG()">Zero G!</button></div>
+    <!--Bootstrap 4 Alpha-->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/actions.js"></script>
+</body>
+
+</html>

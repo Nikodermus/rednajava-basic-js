@@ -31,11 +31,17 @@
 	    <![endif]-->
 
     <title>
-        Let's do it hardcore
+        Let's play again
     </title>
 
     <!--jQuery-->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <style>
+        #elRaptor {
+            width: 400px;
+        }
+
+    </style>
 
 
 </head>
@@ -44,7 +50,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <h3>Welcome to the extreme version!</h3>
+            <h3>Why aren't you playing?</h3>
             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 offset-xs-1">
                 <h2>Rock!</h2>
                 <button id="rock" class="buttonGame">
@@ -104,8 +110,18 @@
     <script type="text/javascript" src="js/tether.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script>
+        !window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>')
 
-    <!--Custom Scripts-->
+    </script>
+    <script src="jquery.raptorize.1.0.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('.myButton').raptorize();
+        });
+
+    </script>
     <script type="text/javascript" src="js/actions.js"></script>
 </body>
 
