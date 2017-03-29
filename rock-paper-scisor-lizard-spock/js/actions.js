@@ -43,7 +43,7 @@ var computerChoice = hardCore;
 
 var compare = function (me, opponent) {
     $('#computer').html(opponent);
-
+    /* COMIENZAS A EDITAR*/
     if (me === 'rock') {
 
 
@@ -87,7 +87,36 @@ var compare = function (me, opponent) {
             return 'Computer!';
         }
 
-    } else {
+    } else if (me === 'lizard') {
+        if (opponent === 'lizard') {
+            return 'Nobody!';
+        } else if (opponent === 'scissors') {
+            return 'Computer!';
+        } else if (opponent === 'paper') {
+            return 'Human!';
+        } else if (opponent === 'rock') {
+            return 'Computer!';
+        } else if (opponent === 'spock') {
+            return 'Human!';
+        }
+
+    } else if (me === 'spock') {
+        if (opponent === 'spock') {
+            return 'Nobody!';
+        } else if (opponent === 'scissors') {
+            return 'Human!';
+        } else if (opponent === 'paper') {
+            return 'Computer!';
+        } else if (opponent === 'rock') {
+            return 'Human!';
+        } else if (opponent === 'lizard') {
+            return 'Computer!';
+        }
+
+    }
+
+    /* NO EDITES MAS*/
+    else {
         return "That doesn't make any sense!";
     }
 
@@ -123,6 +152,6 @@ $("#spock").on('click', function () {
 $("#lizard").on('click', function () {
     var result = compare('lizard', computerChoice());
     $("#decision").html(result);
-    var $this = $(this);
+    var $thisz = $(this);
     colorUser($this, result);
 });
