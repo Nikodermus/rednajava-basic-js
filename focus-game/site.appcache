@@ -1,0 +1,14 @@
+CACHE MANIFEST
+
+# MONTH - DAY - YEAR : v1.0
+
+CACHE:
+404.php
+offline.php
+img/offline.jpg
+http://code.jquery.com/jquery-latest.min.js
+
+FALLBACK:
+/ offline.php
+img/ img/offline.jpg
+
