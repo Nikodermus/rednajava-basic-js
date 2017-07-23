@@ -7,7 +7,6 @@ function alphabetPosition(text) {
     subText = [];
     for (var i = 0; i <= text.length; i++) {
         subText[i] = text.charAt(i);
-        console.log(subText[i])
     }
     finalText = [];
 
@@ -15,7 +14,6 @@ function alphabetPosition(text) {
         for (j in alphabet) {
             if (subText[i] == alphabet[j]) {
                 finalText[i] = Number(j) + 1;
-                //console.log(subText[i] + ' = ' + j);
             }
         }
 
@@ -23,16 +21,14 @@ function alphabetPosition(text) {
     newText = '';
 
     for (i in finalText) {
+        newText += finalText[i] + " ";
 
-        if (i == 0) {
-            newText = finalText[i];
-        } else {
-            newText += " " + finalText[i];
-
-        }
 
     }
-    console.log(newText, finalText[1])
+
+    newText = newText.toString()
+    newText = newText.substring(0, newText.length - 1);
+
 
 
     return newText;

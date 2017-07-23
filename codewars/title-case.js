@@ -1,6 +1,6 @@
 function titleCase(title, minorWords) {
     var finalText, splitTitle, splitMinor;
-    if (title.length >= 0 | title == undefined) {
+    if (title.length <= 0 || title == undefined) {
         return '';
 
     }
