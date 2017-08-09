@@ -1,6 +1,8 @@
 function permutations(string) {
     ops = [];
-    minops = [];
+    pre = [];
+    en = [];
+    pos = [];
     // string = string.split('');
 
 
@@ -9,7 +11,12 @@ function permutations(string) {
 
         for (j in string) {
             let temp = string.substring(j, j);
-            minops[j] =
+
+            for (k in string) {
+                for (m in string) {
+                    pos[]
+                }
+            }
         }
         ops[i] = string.substring(0, j + 1) + temp + string.substring(j + 1, string.length);
     }
